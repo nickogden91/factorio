@@ -1,0 +1,645 @@
+[wooden_chest]
+ingredients = wood: 4
+
+[iron_chest]
+ingredients = iron_plate: 8
+
+[steel_chest]
+ingredients = steel_plate: 8
+
+[storage_tank]
+ingredients = iron_plate: 20, steel_plate: 5
+
+
+[transport_belt]
+ingredients = iron_gear_wheel: 0.5, iron_plate: 0.5
+
+[fast_transport_belt]
+ingredients = iron_gear_wheel: 5, transport_belt: 1
+
+[express_transport_belt]
+ingredients = fast_transport_belt: 1, iron_gear_wheel: 10, lubricant: 20
+
+[underground_belt]
+ingredients = iron_plate: 5, transport_belt: 2.5
+
+[fast_underground_belt]
+ingredients = iron_gear_wheel: 20, underground_belt: 1
+
+[express_underground_belt]
+ingredients = fast_underground_belt: 1, iron_gear_wheel: 40, lubricant: 20
+
+[splitter]
+ingredients = electronic_circuit: 5, iron_plate: 5, transport_belt: 4
+
+[fast_splitter]
+ingredients = electronic_circuit: 10, iron_gear_wheel: 10, splitter: 1
+
+[express_splitter]
+ingredients = advanced_circuit: 10, fast_splitter: 1, iron_gear_wheel: 10, lubricant: 80
+
+
+[burner_inserter]
+ingredients = iron_gear_wheel: 1, iron_plate: 1
+
+[inserter]
+ingredients = electronic_circuit: 1, iron_gear_wheel: 1, iron_plate: 1
+
+[long_handed_inserter]
+ingredients = inserter: 1, iron_gear_wheel: 1, iron_plate: 1
+
+[fast_inserter]
+ingredients = electronic_circuit: 2, inserter: 1, iron_plate: 2
+
+[filter_inserter]
+ingredients = electronic_circuit: 4, fast_inserter: 1
+
+[stack_inserter]
+ingredients = advanced_circuit: 1, electronic_circuit: 15, fast_inserter: 1, iron_gear_wheel: 15
+
+[stack_filter_inserter]
+ingredients = electronic_circuit: 5, stack_inserter: 1
+
+
+[small_electric_pole]
+ingredients = copper_cable: 1, wood: 1
+
+[medium_electric_pole]
+ingredients = copper_plate: 2, steel_plate: 2
+
+[big_electric_pole]
+ingredients = copper_plate: 5, steel_plate: 5
+
+[substation]
+ingredients = advanced_circuit: 5, copper_plate: 5, steel_plate: 10
+
+[pipe]
+ingredients = iron_plate: 1
+
+[pipe_to_ground]
+ingredients = iron_plate: 2.5, pipe: 5
+
+[pump]
+ingredients = engine_unit: 1, pipe: 1, steel_plate: 1
+
+
+[rail]
+ingredients = iron_stick: 0.5, steel_plate: 0.5, stone: 0.5
+
+[train_stop]
+ingredients = electronic_circuit: 5, iron_plate: 10, steel_plate: 3
+
+[rail_signal]
+ingredients = electronic_circuit: 1, iron_plate: 5
+
+[rail_chain_signal]
+ingredients = electronic_circuit: 1, iron_plate: 5
+
+[locomotive]
+ingredients = electronic_circuit: 10, engine_unit: 20, steel_plate: 30
+
+[cargo_wagon]
+ingredients = iron_gear_wheel: 10, iron_plate: 20, steel_plate: 20
+
+[fluid_wagon]
+ingredients = iron_gear_wheel: 10, pipe: 8, steel_plate: 16, storage_tank: 1
+
+[artillery_wagon]
+ingredients = advanced_circuit: 20, engine_unit: 64, iron_gear_wheel: 10, pipe: 16, steel_plate: 40
+
+[car]
+ingredients = engine_unit: 8, iron_plate: 20, steel_plate: 5
+
+[tank]
+ingredients = advanced_circuit: 10, engine_unit: 32, iron_gear_wheel: 15, steel_plate: 50
+
+
+[logistic_robot]
+ingredients = advanced_circuit: 2, flying_robot_frame: 1
+
+[construction_robot]
+ingredients = electronic_circuit: 2, flying_robot_frame: 1
+
+[active_provider_chest]
+ingredients = advanced_circuit: 1, electronic_circuit: 3, steel_chest: 1
+
+[storage_chest]
+ingredients = advanced_circuit: 1, electronic_circuit: 3, steel_chest: 1
+
+[buffer_chest]
+ingredients = advanced_circuit: 1, electronic_circuit: 3, steel_chest: 1
+
+[requester_chest]
+ingredients = advanced_circuit: 1, electronic_circuit: 3, steel_chest: 1
+
+[roboport]
+ingredients = advanced_circuit: 45, iron_gear_wheel: 45, steel_plate: 45
+
+
+[lamp]
+ingredients = electronic_circuit: 1, iron_plate: 1, iron_stick: 1
+
+[red_wire]
+ingredients = copper_cable: 1, electronic_circuit: 1
+
+[green_wire]
+ingredients = copper_cable: 1, electronic_circuit: 1
+
+[arithmetic_combinator]
+ingredients = copper_cable: 5, electronic_circuit: 5
+
+[decider_combinator]
+ingredients = copper_cable: 5, electronic_circuit: 5
+
+[constant_combinator]
+ingredients = copper_cable: 5, electronic_circuit: 5
+
+[power_switch]
+ingredients = copper_cable: 5, electronic_circuit: 2, iron_plate: 5
+
+[programmable_speaker]
+ingredients = copper_cable: 5, electronic_circuit: 4, iron_plate: 5
+
+
+[stone_brick]
+ingredients = stone: 2
+
+[concrete]
+ingredients = iron_ore: 0.1, stone_brick: 0.5, water: 10
+
+[hazard_concrete]
+ingredients = concrete: 1
+
+[refined_concrete]
+ingredients = concrete: 2, iron_stick: 0.8, steel_plate: 0.1, water: 10
+
+[refined_hazard_concrete]
+ingredients = refined_concrete: 1
+
+[landfill]
+ingredients = stone: 20
+
+[cliff_explosives]
+ingredients = empty_barrel: 1, explosives: 1, grenade: 1
+
+
+[iron_axe]
+ingredients = iron_plate: 3, iron_stick: 2
+
+[steel_axe]
+ingredients = iron_stick: 2, steel_plate: 5
+
+[repair_pack]
+ingredients = electronic_circuit: 2, iron_gear_wheel: 2
+
+
+[boiler]
+ingredients = pipe: 4, stone_furnace: 1
+
+[steam_engine]
+ingredients = iron_gear_wheel: 8, iron_plate: 10, pipe: 5
+
+[steam_turbine]
+ingredients = copper_plate: 50, iron_gear_wheel: 50, pipe: 20
+
+[solar_panel]
+ingredients = copper_plate: 5, electronic_circuit: 15, steel_plate: 5
+
+[accumulator]
+ingredients = battery: 5, iron_plate: 2
+
+[nuclear_reactor]
+ingredients = advanced_circuit: 500, concrete: 500, copper_plate: 500, steel_plate: 500
+
+[heat_exchanger]
+ingredients = copper_plate: 100, pipe: 10, steel_plate: 10
+
+[heat_pipe]
+ingredients = copper_plate: 20, steel_plate: 10
+
+
+[burner_mining_drill]
+ingredients = iron_gear_wheel: 3, iron_plate: 3, stone_furnace: 1
+
+[electric_mining_drill]
+ingredients = electronic_circuit: 3, iron_gear_wheel: 5, iron_plate: 10
+
+[offshore_pump]
+ingredients = electronic_circuit: 2, iron_gear_wheel: 1, pipe: 1
+
+[pumpjack]
+ingredients = electronic_circuit: 5, iron_gear_wheel: 10, pipe: 10, steel_plate: 5
+
+
+[stone_furnace]
+ingredients = stone: 5
+
+[steel_furnace]
+ingredients = steel_plate: 6, stone_brick: 10
+
+[electric_furnace]
+ingredients = advanced_circuit: 5, steel_plate: 10, stone_brick: 10
+
+
+[assembly_machine_1]
+ingredients = electronic_circuit: 3, iron_gear_wheel: 5, iron_plate: 9
+
+[assembly_machine_2]
+ingredients = assembly_machine_1: 1, electronic_circuit: 3, iron_gear_wheel: 5
+
+[assembly_machine_3]
+ingredients = assembly_machine_2: 2, speed_module: 4
+
+[oil_refinery]
+ingredients = electronic_circuit: 10, iron_gear_wheel: 10, pipe: 10, steel_plate: 15, stone_brick: 10
+
+[chemical_plant]
+ingredients = electronic_circuit: 5, iron_gear_wheel: 5, pipe: 5, steel_plate: 5
+
+[centrifuge]
+ingredients = advanced_circuit: 100, concrete: 100, iron_gear_wheel: 100, steel_plate: 50
+
+[lab]
+ingredients = electronic_circuit: 10, iron_gear_wheel: 10, transport_belt: 4
+
+
+[beacon]
+ingredients = advanced_circuit: 20, copper_cable: 10, electronic_circuit: 20, steel_plate: 10
+
+[speed_module]
+ingredients = advanced_circuit: 5, electronic_circuit: 5
+
+[speed_module_2]
+ingredients = advanced_circuit: 5, processing_unit: 5, speed_module: 4
+
+[speed_module_3]
+ingredients = advanced_circuit: 5, processing_unit: 5, speed_module_2: 5
+
+[efficiency_module]
+ingredients = advanced_circuit: 5, electronic_circuit: 5
+
+[efficiency_module_2]
+ingredients = advanced_circuit: 5, processing_unit: 5, speed_module: 4
+
+[efficiency_module_3]
+ingredients = advanced_circuit: 5, processing_unit: 5, speed_module_2: 5
+
+[productivity_module]
+ingredients = advanced_circuit: 5, electronic_circuit: 5
+
+[productivity_module_2]
+ingredients = advanced_circuit: 5, processing_unit: 5, speed_module: 4
+
+[productivity_module_3]
+ingredients = advanced_circuit: 5, processing_unit: 5, speed_module_2: 5
+
+
+[raw_wood]
+ingredients = None
+
+[coal]
+ingredients = None
+
+[stone]
+ingredients = None
+
+[iron_ore]
+ingredients = None
+
+[copper_ore]
+ingredients = None
+
+[uranium_ore]
+ingredients = None
+
+[raw_fish]
+ingredients = None
+
+[crude_oil]
+ingredients = None
+
+[heavy_oil]
+ingredients = None
+
+[light_oil]
+ingredients = None
+
+[lubricant]
+ingredients = None
+
+[petroleum_gas]
+ingredients = None
+
+[sulferic_acid]
+ingredients = None
+
+[water]
+ingredients = None
+
+[steam]
+ingredients = None
+
+[wood]
+ingredients = raw_wood: 0.5
+
+[iron_plate]
+ingredients = iron_ore: 1
+
+[copper_plate]
+ingredients = copper_ore: 1
+
+[solid_fuel]
+ingredients = None
+
+[steel_plate]
+ingredients = iron_plate: 5
+
+[plastic_bar]
+ingredients = None
+
+[sulfur]
+ingredients = petroleum_gas: 0.0666, water: 0.0666
+
+[battery]
+ingredients = copper_plate: 1, iron_plate: 1, sulferic_acid: 20
+
+[explosives]
+ingredients = coal: 0.5, sulfur: 0.5, water: 5
+
+
+[crude_oil_barrel]
+ingredients = None
+
+[heavy_oil_barrel]
+ingredients = None
+
+[light_oil_barrel]
+ingredients = None
+
+[lubricant_barrel]
+ingredients = None
+
+[petroleum_gas_barrel]
+ingredients = None
+
+[sulferic_acid_barrel]
+ingredients = None
+
+[water_barrel]
+ingredients = None
+
+
+[copper_cable]
+ingredients = copper_plate: 0.5
+
+[iron_stick]
+ingredients = iron_plate: 0.5
+
+[iron_gear_wheel]
+ingredients = iron_plate: 2
+
+[empty_barrel]
+ingredients = steel_plate: 1
+
+[electronic_circuit]
+ingredients = copper_cable: 3, iron_plate: 1
+
+[advanced_circuit]
+ingredients = copper_cable: 4, electronic_circuit: 2, plastic_bar: 2
+
+[processing_unit]
+ingredients = advanced_circuit: 2, electronic_circuit: 20, sulferic_acid: 5
+
+[engine_unit]
+ingredients = iron_gear_wheel: 1, pipe: 2, steel_plate: 1
+
+[electric_engine_unit]
+ingredients = electronic_circuit: 2, engine_unit: 1, lubricant: 15
+
+[flying_robot_frame]
+ingredients = battery: 2, electric_engine_unit: 1, electronic_circuit: 3, steel_plate: 1
+
+[satellite]
+ingredients = accumulator: 100, low_density_structure: 100, processing_unit: 100, radar: 5, rocket_fuel: 50, solar_panel: 100
+
+[rocket_part]
+ingredients = low_density_structure: 10, rocket_control_unit: 10, rocket_fuel: 10
+
+[rocket_control_unit]
+ingredients = processing_unit: 1, speed_module: 1
+
+
+[low_density_structure]
+ingredients = copper_plate: 5, plastic_bar: 5, steel_plate: 10
+
+[rocket_fuel]
+ingredients = solid_fuel: 10
+
+[nuclear_fuel]
+ingredients = solid_fuel: 1, uranium_235: 1
+
+[uranium_235]
+ingredients = None
+
+[uranium_238]
+ingredients = None
+
+[uranium_fuel_cell]
+ingredients = iron_plate: 10, uranium_235: 1, uranium_238: 19
+
+[used_up_uranium_fuel_cell]
+ingredients = uranium_fuel_cell: 1
+
+
+[science_pack_1]
+ingredients = copper_plate: 1, iron_gear_wheel: 1
+
+[science_pack_2]
+ingredients = inserter: 1, transport_belt: 1
+
+[science_pack_3]
+ingredients = advanced_circuit: 1, electric_mining_drill: 1, engine_unit: 1
+
+[millitary_science_pack]
+ingredients = grenade: 0.5, gun_turret: 0.5, piercing_rounds_magazine: 0.5
+
+[production_science_pack]
+ingredients = electric_engine_unit: 0.5, electric_furnace: 0.5
+
+[high_tech_science_pack]
+ingredients = battery: 0.5, copper_cable: 15, processing_unit: 1.5, speed_module: 0.5
+
+[space_science_pack]
+ingredients = rocket_part: 0.1, satellite: 0.001
+
+
+[pistol]
+ingredients = copper_plate: 5, iron_plate: 5
+
+[submachine_gun]
+ingredients = copper_plate: 5, iron_gear_wheel: 10, iron_plate: 10
+
+[shotgun]
+ingredients = copper_plate: 10, iron_gear_wheel: 5, iron_plate: 15
+
+[combat_shotgun]
+ingredients = copper_plate: 10, iron_gear_wheel: 5, steel_plate: 15
+
+[rocket_launcher]
+ingredients = electronic_circuit: 5, iron_gear_wheel: 5, iron_plate: 5
+
+[flamethrower]
+ingredients = iron_gear_wheel: 10, steel_plate: 5
+
+[land_mine]
+ingredients = explosives: 2, steel_plate: 1
+
+
+[firearm_magazine]
+ingredients = iron_plate: 4
+
+[piercing_rounds_magazine]
+ingredients = copper_plate: 5, firearm_magazine: 1, steel_plate: 1
+
+[uranium_rounds_magazine]
+ingredients = piercing_rounds_magazine: 1, uranium_238: 1
+
+[shotgun_shells]
+ingredients = copper_plate: 2, iron_plate: 2
+
+[piercing_shotgun_shells]
+ingredients = copper_plate: 5, shotgun_shells: 2, steel_plate: 2
+
+[cannon_shell]
+ingredients = explosives: 1, plastic_bar: 2, steel_plate: 2
+
+[explosive_cannon_shell]
+ingredients = explosives: 2, plastic_bar: 2, steel_plate: 2
+
+[uranium_cannon_shell]
+ingredients = cannon_shell: 1, uranium_238: 1
+
+[explosive_uranium_cannon_shell]
+ingredients = explosive_cannon_shell: 1, uranium_238: 1
+
+[artillery_shell]
+ingredients = explosive_cannon_shell: 4, explosives: 8, radar: 1
+
+[rocket]
+ingredients = electronic_circuit: 1, explosives: 1, iron_plate: 2
+
+[explosive_rocket]
+ingredients = explosives: 2, rocket: 1
+
+[atomic_bomb]
+ingredients = explosives: 10, processing_unit: 20, uranium_235: 30
+
+[flamethrower_ammo]
+ingredients = heavy_oil: 50, light_oil: 50, steel_plate: 5
+
+
+[grenade]
+ingredients = coal: 10, iron_plate: 5
+
+[cluster_grenade]
+ingredients = explosives: 5, grenade: 7, steel_plate: 5
+
+[poison_capsule]
+ingredients = coal: 10, electronic_circuit: 3, steel_plate: 3
+
+[slowdown_capsule]
+ingredients = coal: 5, electronic_circuit: 2, steel_plate: 2
+
+[defender_capsule]
+ingredients = electronic_circuit: 2, iron_gear_wheel: 3, piercing_rounds_magazine: 1
+
+[distractor_capsule]
+ingredients = advanced_circuit: 3, defender_capsule: 4
+
+[destroyer_capsule]
+ingredients = distractor_capsule: 4, speed_module: 1
+
+[discharge_defense_remote]
+ingredients = electronic_circuit: 1
+
+[artillery_targeting_remote]
+ingredients = processing_unit: 1, radar: 1
+
+
+[light_armor]
+ingredients = iron_plate: 40
+
+[heavy_armor]
+ingredients = copper_plate: 100, steel_plate: 50
+
+[modular_armor]
+ingredients = advanced_circuit: 30, steel_plate: 50
+
+[power_armor]
+ingredients = electric_engine_unit: 20, processing_unit: 40, steel_plate: 40
+
+[power_armor_mk2]
+ingredients = efficiency_module_3: 5, processing_unit: 40, speed_module_3: 5, steel_plate: 40
+
+
+[portable_solar_panel]
+ingredients = advanced_circuit: 1, solar_panel: 5, steel_plate: 5
+
+[portable_fusion_reactor]
+ingredients = processing_unit: 250
+
+[energy_shield]
+ingredients = advanced_circuit: 5, steel_plate: 10
+
+[energy_shield_mk2]
+ingredients = energy_shield: 10, processing_unit: 10
+
+[battery_mk1]
+ingredients = battery: 5, steel_plate: 10
+
+[battery_mk2]
+ingredients = battery_mk1: 10, processing_unit: 20
+
+[personal_laser_defense]
+ingredients = laser_turret: 5, processing_unit: 1, steel_plate: 5
+
+[discharge_defense]
+ingredients = laser_turret: 10, processing_unit: 5, steel_plate: 20
+
+[exoskeleton]
+ingredients = electric_engine_unit: 30, processing_unit: 10, steel_plate: 20
+
+[personal_roboport]
+ingredients = advanced_circuit: 10, battery: 45, iron_gear_wheel: 40, steel_plate: 20
+
+[personal_roboport_mk2]
+ingredients = personal_roboport: 5, processing_unit: 100
+
+[nightvision]
+ingredients = advanced_circuit: 5, steel_plate: 10
+
+
+[stone_wall]
+ingredients = stone_brick: 5
+
+[gate]
+ingredients = electronic_circuit: 2, steel_plate: 2, stone_wall: 1
+
+[gun_turret]
+ingredients = copper_plate: 10, iron_gear_wheel: 10, iron_plate: 20
+
+[laser_turret]
+ingredients = battery: 12, electronic_circuit: 20, steel_plate: 20
+
+[flamethrower_turret]
+ingredients = engine_unit: 5, iron_gear_wheel: 15, pipe: 10, steel_plate: 30
+
+[artillery_turret]
+ingredients = advanced_circuit: 20, concrete: 60, iron_gear_wheel: 40, steel_plate: 60
+
+[radar]
+ingredients = electronic_circuit: 5, iron_gear_wheel: 5, iron_plate: 10
+
+[rocket_silo]
+ingredients = concrete: 1000, electric_engine_unit: 200, pipe: 100, processing_unit: 200, steel_plate: 1000
+
