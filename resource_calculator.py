@@ -29,14 +29,13 @@ class ResourceCalculator:
         self.cost = defaultdict(int)
         self.time = 0
 
-    def add(self, item_dict):
+    def add(self, item_dict, max_recurse_depth):
         for (name,count) in item_dict.items():
-            print(name, count)
             item = self.items[name]
-            if item['ingredients'] == None:
+            if item['ingredients'] == None or max_recurse_depth == 0:
                 self.cost[name] += count
             else:
-                self.add({key:value*count for (key,value) in item['ingredients'].items()})
+                self.add({key:value*count for (key,value) in item['ingredients'].items()}, max_recurse_depth-1)
 
     def print_(self):
         print(dict(self.cost))
@@ -53,5 +52,5 @@ if __name__ == '__main__':
     R = ResourceCalculator()
     #R.add({"science_pack_1": 1, "science_pack_2": 1, "science_pack_3": 1, "millitary_science_pack": 1, "production_science_pack": 1, "high_tech_science_pack": 1})
     #R.add({"rocket_silo": 1, "rocket_part": 100, "satellite": 1})
-    R.add({"advanced_circuit": 1})
+    R.add({"advanced_circuit": 1}, 2)
     R.print_()
