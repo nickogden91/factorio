@@ -32,13 +32,16 @@ class ResourceCalculator:
     def add(self, item_dict, max_recurse_depth):
         for (name,count) in item_dict.items():
             item = self.items[name]
+            if max_recurse_depth > 0:
+                self.time += item['time'] * count
             if item['ingredients'] == None or max_recurse_depth == 0:
                 self.cost[name] += count
             else:
                 self.add({key:value*count for (key,value) in item['ingredients'].items()}, max_recurse_depth-1)
 
     def print_(self):
-        print(dict(self.cost))
+        print("cost:", dict(self.cost))
+        print("time:", self.time)
 
     def test(self):
         for item in self.items:
