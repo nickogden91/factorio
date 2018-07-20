@@ -208,7 +208,7 @@ crafting_time = 2
 
 [stone_brick]
 ingredients = stone: 2
-smelting_time = 3.5
+smelting_time = 1.75438596
 
 [concrete]
 ingredients = iron_ore: 0.1, stone_brick: 0.5, water: 10
@@ -380,23 +380,23 @@ mining_time = 0.5
 
 [coal]
 ingredients = None
-mining_time = 2
+mining_time = 1.9047619
 
 [stone]
 ingredients = None
-mining_time = 2
+mining_time = 1.9047619
 
 [iron_ore]
 ingredients = None
-mining_time = 2
+mining_time = 1.9047619
 
 [copper_ore]
 ingredients = None
-mining_time = 2
+mining_time = 1.9047619
 
 [uranium_ore]
 ingredients = None
-mining_time = 2
+mining_time = 1.9047619
 
 [raw_fish]
 ingredients = None
@@ -405,34 +405,42 @@ mining_time = 2
 [crude_oil]
 ingredients = None
 mining_time = 0
+transport = pipe
 
 [heavy_oil]
 ingredients = None
 production_time = 0
+transport = pipe
 
 [light_oil]
 ingredients = None
 production_time = 0
+transport = pipe
 
 [lubricant]
 ingredients = None
 production_time = 0.1
+transport = pipe
 
 [petroleum_gas]
 ingredients = None
 production_time = 0.125
+transport = pipe
 
 [sulferic_acid]
 ingredients = None
 production_time = 0.02
+transport = pipe
 
 [water]
 ingredients = None
 mining_time = 0
+transport = pipe
 
 [steam]
 ingredients = None
 production_time = 0
+transport = pipe
 
 [wood]
 ingredients = raw_wood: 0.5
@@ -440,11 +448,11 @@ crafting_time = 0.25
 
 [iron_plate]
 ingredients = iron_ore: 1
-smelting_time = 3.5
+smelting_time = 1.75438596
 
 [copper_plate]
 ingredients = copper_ore: 1
-smelting_time = 3.5
+smelting_time = 1.75438596
 
 [solid_fuel]
 ingredients = None
@@ -452,7 +460,7 @@ production_time = 0.333
 
 [steel_plate]
 ingredients = iron_plate: 5
-smelting_time = 17.5
+smelting_time = 8.77192982
 
 [plastic_bar]
 ingredients = None
