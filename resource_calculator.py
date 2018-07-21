@@ -2,6 +2,7 @@ import os
 from collections import defaultdict
 from configparser import ConfigParser
 from math import ceil
+import argparse
 
 AM1_CRAFTING_SPEED = 0.5
 AM2_CRAFTING_SPEED = 0.75
@@ -114,8 +115,9 @@ class ResourceCalculator:
 
 
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('item_name')
+    parser.add_argument('rate', type=float)
+    args = parser.parse_args()
     R = ResourceCalculator()
-    #R.add({"science_pack_1": 1, "science_pack_2": 1, "science_pack_3": 1, "millitary_science_pack": 1, "production_science_pack": 1, "high_tech_science_pack": 1})
-    #R.add({"rocket_silo": 1, "rocket_part": 100, "satellite": 1})
-    R.print_factory("processing_unit", 1)
-    #R.get_factory("express_transport_belt", 1)
+    R.print_factory(args.item_name, args.rate)
