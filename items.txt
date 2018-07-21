@@ -24,7 +24,7 @@ crafting_time = 0.5
 
 [express_transport_belt]
 ingredients = fast_transport_belt: 1, iron_gear_wheel: 10, lubricant: 20
-production_time = 0.5
+crafting_time = 0.5
 
 [underground_belt]
 ingredients = iron_plate: 5, transport_belt: 2.5
@@ -36,7 +36,7 @@ crafting_time = 2
 
 [express_underground_belt]
 ingredients = fast_underground_belt: 1, iron_gear_wheel: 40, lubricant: 20
-production_time = 2
+crafting_time = 2
 
 [splitter]
 ingredients = electronic_circuit: 5, iron_plate: 5, transport_belt: 4
@@ -48,7 +48,7 @@ crafting_time = 2
 
 [express_splitter]
 ingredients = advanced_circuit: 10, fast_splitter: 1, iron_gear_wheel: 10, lubricant: 80
-production_time = 2
+crafting_time = 2
 
 [burner_inserter]
 ingredients = iron_gear_wheel: 1, iron_plate: 1
@@ -208,11 +208,12 @@ crafting_time = 2
 
 [stone_brick]
 ingredients = stone: 2
-smelting_time = 1.75438596
+crafting_time = 1.75438596
+produced_in = furnace
 
 [concrete]
 ingredients = iron_ore: 0.1, stone_brick: 0.5, water: 10
-production_time = 10
+crafting_time = 10
 
 [hazard_concrete]
 ingredients = concrete: 1
@@ -309,14 +310,17 @@ crafting_time = 5
 [assembly_machine_1]
 ingredients = electronic_circuit: 3, iron_gear_wheel: 5, iron_plate: 9
 crafting_time = 0.5
+crafting_speed = 0.5
 
 [assembly_machine_2]
 ingredients = assembly_machine_1: 1, electronic_circuit: 3, iron_gear_wheel: 5
 crafting_time = 0.5
+crafting_speed = 0.75
 
 [assembly_machine_3]
 ingredients = assembly_machine_2: 2, speed_module: 4
 crafting_time = 0.5
+crafting_speed = 1.25
 
 [oil_refinery]
 ingredients = electronic_circuit: 10, iron_gear_wheel: 10, pipe: 10, steel_plate: 15, stone_brick: 10
@@ -376,71 +380,84 @@ crafting_time = 60
 
 [raw_wood]
 ingredients = None
-mining_time = 0.5
+crafting_time = 0.5
 
 [coal]
 ingredients = None
-mining_time = 1.9047619
+crafting_time = 1.9047619
+produced_in = electric_mining_drill
 
 [stone]
 ingredients = None
-mining_time = 1.9047619
+crafting_time = 1.9047619
+produced_in = electric_mining_drill
 
 [iron_ore]
 ingredients = None
-mining_time = 1.9047619
+crafting_time = 1.9047619
+produced_in = electric_mining_drill
 
 [copper_ore]
 ingredients = None
-mining_time = 1.9047619
+crafting_time = 1.9047619
+produced_in = electric_mining_drill
 
 [uranium_ore]
 ingredients = None
-mining_time = 1.9047619
+crafting_time = 1.9047619
+produced_in = electric_mining_drill
 
 [raw_fish]
 ingredients = None
-mining_time = 2
+crafting_time = 2
 
 [crude_oil]
 ingredients = None
-mining_time = 0
+crafting_time = 0
 transport = pipe
+produced_in = pumpjack
 
 [heavy_oil]
 ingredients = None
-production_time = 0
+crafting_time = 0
 transport = pipe
+produced_in = oil_refinery
 
 [light_oil]
 ingredients = None
-production_time = 0
+crafting_time = 0
 transport = pipe
+produced_in = oil_refinery
 
 [lubricant]
 ingredients = None
-production_time = 0.1
+crafting_time = 0.1
 transport = pipe
+produced_in = chemical_plant
 
 [petroleum_gas]
 ingredients = None
-production_time = 0.125
+crafting_time = 0.125
 transport = pipe
+produced_in = chemical_plant
 
 [sulferic_acid]
 ingredients = None
-production_time = 0.02
+crafting_time = 0.02
 transport = pipe
+produced_in = chemical_plant
 
 [water]
 ingredients = None
-mining_time = 0
+crafting_time = 0
 transport = pipe
+produced_in = offshore_pump
 
 [steam]
 ingredients = None
-production_time = 0
+crafting_time = 0
 transport = pipe
+produced_in = boiler
 
 [wood]
 ingredients = raw_wood: 0.5
@@ -448,63 +465,71 @@ crafting_time = 0.25
 
 [iron_plate]
 ingredients = iron_ore: 1
-smelting_time = 1.75438596
+crafting_time = 1.75438596
+produced_in = electric_furnace
 
 [copper_plate]
 ingredients = copper_ore: 1
-smelting_time = 1.75438596
+crafting_time = 1.75438596
+produced_in = electric_furnace
 
 [solid_fuel]
 ingredients = None
-production_time = 0.333
+crafting_time = 0.333
+produced_in = chemical_plant
 
 [steel_plate]
 ingredients = iron_plate: 5
-smelting_time = 8.77192982
+crafting_time = 8.77192982
+produced_in = electric_furnace
 
 [plastic_bar]
 ingredients = None
-production_time = 0.5
+crafting_time = 0.5
+produced_in = chemical_plant
 
 [sulfur]
 ingredients = petroleum_gas: 0.0666, water: 0.0666
-production_time = 0.5
+crafting_time = 0.5
+produced_in = chemical_plant
 
 [battery]
 ingredients = copper_plate: 1, iron_plate: 1, sulferic_acid: 20
-production_time = 5
+crafting_time = 5
+produced_in = chemical_plant
 
 [explosives]
 ingredients = coal: 0.5, sulfur: 0.5, water: 5
-production_time = 2.5
+crafting_time = 2.5
+produced_in = chemical_plant
 
 [crude_oil_barrel]
 ingredients = None
-production_time = 0.2
+crafting_time = 0.2
 
 [heavy_oil_barrel]
 ingredients = None
-production_time = 0.2
+crafting_time = 0.2
 
 [light_oil_barrel]
 ingredients = None
-production_time = 0.2
+crafting_time = 0.2
 
 [lubricant_barrel]
 ingredients = None
-production_time = 0.2
+crafting_time = 0.2
 
 [petroleum_gas_barrel]
 ingredients = None
-production_time = 0.2
+crafting_time = 0.2
 
 [sulferic_acid_barrel]
 ingredients = None
-production_time = 0.2
+crafting_time = 0.2
 
 [water_barrel]
 ingredients = None
-production_time = 0.2
+crafting_time = 0.2
 
 [copper_cable]
 ingredients = copper_plate: 0.5
@@ -532,15 +557,15 @@ crafting_time = 6
 
 [processing_unit]
 ingredients = advanced_circuit: 2, electronic_circuit: 20, sulferic_acid: 5
-production_time = 10
+crafting_time = 10
 
 [engine_unit]
 ingredients = iron_gear_wheel: 1, pipe: 2, steel_plate: 1
-production_time = 10
+crafting_time = 10
 
 [electric_engine_unit]
 ingredients = electronic_circuit: 2, engine_unit: 1, lubricant: 15
-production_time = 10
+crafting_time = 10
 
 [flying_robot_frame]
 ingredients = battery: 2, electric_engine_unit: 1, electronic_circuit: 3, steel_plate: 1
@@ -553,6 +578,7 @@ crafting_time = 5
 [rocket_part]
 ingredients = low_density_structure: 10, rocket_control_unit: 10, rocket_fuel: 10
 crafting_time = 3
+produced_in = rocket_silo
 
 [rocket_control_unit]
 ingredients = processing_unit: 1, speed_module: 1
@@ -569,14 +595,17 @@ crafting_time = 30
 [nuclear_fuel]
 ingredients = solid_fuel: 1, uranium_235: 1
 crafting_time = 60
+produced_in = centrifuge
 
 [uranium_235]
 ingredients = None
-production_time = 1428
+crafting_time = 1428
+produced_in = centrifuge
 
 [uranium_238]
 ingredients = None
-production_time = 10.07
+crafting_time = 10.07
+produced_in = centrifuge
 
 [uranium_fuel_cell]
 ingredients = iron_plate: 10, uranium_235: 1, uranium_238: 19
@@ -584,7 +613,8 @@ crafting_time = 10
 
 [used_up_uranium_fuel_cell]
 ingredients = uranium_fuel_cell: 200
-production_time = 0.5
+crafting_time = 0.5
+produced_in = nuclear_reactor
 
 [science_pack_1]
 ingredients = copper_plate: 1, iron_gear_wheel: 1
@@ -612,7 +642,7 @@ crafting_time = 7
 
 [space_science_pack]
 ingredients = rocket_part: 0.1, satellite: 0.001
-production_time = 0
+crafting_time = 0
 
 [pistol]
 ingredients = copper_plate: 5, iron_plate: 5
@@ -696,7 +726,8 @@ crafting_time = 50
 
 [flamethrower_ammo]
 ingredients = heavy_oil: 50, light_oil: 50, steel_plate: 5
-production_time = 6
+crafting_time = 6
+produced_in = chemical_plant
 
 [grenade]
 ingredients = coal: 10, iron_plate: 5
