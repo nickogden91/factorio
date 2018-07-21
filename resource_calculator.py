@@ -4,24 +4,10 @@ from configparser import ConfigParser
 from math import ceil
 import argparse
 
-AM1_CRAFTING_SPEED = 0.5
-AM2_CRAFTING_SPEED = 0.75
-AM3_CRAFTING_SPEED = 1.25
-AM3_CRAFTING_SPEED_SP3 = 1.25 * 3
-CRAFTING_SPEED = AM3_CRAFTING_SPEED
-
 DEFAULT_ASSEMBLY_MACHINE = 'assembly_machine_3'
 DEFAULT_TRANSPORT_BELT = 'express_transport_belt'
 DEFAULT_FURNACE = 'electric_furnace'
 DEFAULT_MINING_DRILL = 'electric_mining_drill'
-
-TB_HALF_CAPACITY = 6.66666666
-TB_FULL_CAPACITY = 13.3333333
-FTB_HALF_CAPACITY = 13.333333
-FTB_FULL_CAPACITY = 26.6666666
-ETB_HALF_CAPACITY = 20
-ETB_FULL_CAPACITY = 40
-PIPE_FULL_CAPACITY = 1000
 
 class ResourceCalculator:
 
@@ -89,7 +75,7 @@ class ResourceCalculator:
         if recurse_level == 0:
             print("Factory:")
         factory = self.get_factory(item_name, rate)
-        indent_str = '        '*recurse_level
+        indent_str = '          '*recurse_level
         print('\n%s' % self.get_item_str(item_name, rate, multiline=True, indent_str=indent_str))
         for item_n, count, in factory['ingredients']:
             aggregate_materials[item_n] += count
@@ -111,7 +97,7 @@ class ResourceCalculator:
         if multiline:
             return '%s%-22s %6s\n%s%-22s %6s\n%s%-22s %6s' % (indent_str, item_name, '%.1f/s' % rate, indent_str, transport_name, '%.0f%%' % transport_capacity, indent_str, production_unit_name, production_unit_count)
         else:
-            return '%s%-28s %6s  %28s  %6s  %28s  %4s' % (indent_str, item_name, '%3.1f/s' % rate, transport_name, '%.0f%%' % transport_capacity, production_unit_name, production_unit_count) 
+            return '%s%-28s %7s  %28s  %6s  %28s  %4s' % (indent_str, item_name, '%3.1f/s' % rate, transport_name, '%.0f%%' % transport_capacity, production_unit_name, production_unit_count) 
 
 
 if __name__ == '__main__':
