@@ -85,14 +85,13 @@ class ResourceCalculator:
         total_production_units = defaultdict(int)
         if recurse_level == 0:
             print('\n\nAggregate Materials:\n')
-            for item in aggregate_materials:
-                rate = aggregate_materials[item] 
+            for item,rate in sorted(aggregate_materials.items()):
                 total_production_units[self.items[item]['produced_in']] += \
                     ceil(rate*(self.items[item]['crafting_time'])/self.items[self.items[item]['produced_in']]['crafting_speed'])
-                print(self.get_item_str(item, aggregate_materials[item]))
+                print(self.get_item_str(item, rate))
 
             print("\n\nTotal Production Units:\n")
-            for unit,count in total_production_units.items():
+            for unit,count in sorted(total_production_units.items()):
                 print('%-24s %6d' % (unit, count))
 
 
