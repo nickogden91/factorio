@@ -95,9 +95,9 @@ class ResourceCalculator:
         production_unit_name = self.items[item_name]['produced_in']
         production_unit_count = ceil(rate*(self.items[item_name]['crafting_time'])/self.items[self.items[item_name]['produced_in']]['crafting_speed'])
         if multiline:
-            return '%s%-22s %6s\n%s%-22s %6s\n%s%-22s %6s' % (indent_str, item_name, '%.1f/s' % rate, indent_str, transport_name, '%.0f%%' % transport_capacity, indent_str, production_unit_name, production_unit_count)
+            return '%s%-22s %8s\n%s%-22s %8s\n%s%-22s %8s' % (indent_str, item_name, '%.1f/s' % rate, indent_str, transport_name, '%.0f%%' % transport_capacity, indent_str, production_unit_name, production_unit_count)
         else:
-            return '%s%-28s %7s  %28s  %6s  %28s  %4s' % (indent_str, item_name, '%3.1f/s' % rate, transport_name, '%.0f%%' % transport_capacity, production_unit_name, production_unit_count) 
+            return '%s%-28s %8s  %28s  %6s  %28s  %4s' % (indent_str, item_name, '%3.1f/s' % rate, transport_name, '%.0f%%' % transport_capacity, production_unit_name, production_unit_count) 
 
 
 if __name__ == '__main__':

@@ -422,31 +422,31 @@ transport = pipe
 produced_in = pumpjack
 
 [heavy_oil]
-ingredients = None
+ingredients = crude_oil: 10, water: 5
 crafting_time = 0
 transport = pipe
 produced_in = oil_refinery
 
 [light_oil]
-ingredients = None
+ingredients = crude_oil: 2.222222, water: 1.111111
 crafting_time = 0
 transport = pipe
 produced_in = oil_refinery
 
 [lubricant]
-ingredients = None
+ingredients = heavy_oil: 1
 crafting_time = 0.1
 transport = pipe
 produced_in = chemical_plant
 
 [petroleum_gas]
-ingredients = None
+ingredients = crude_oil: 1.8181818, water: 0.909090909
 crafting_time = 0.125
 transport = pipe
 produced_in = chemical_plant
 
 [sulferic_acid]
-ingredients = None
+ingredients = iron_plate: 0.02, sulfur: 0.1, water: 2
 crafting_time = 0.02
 transport = pipe
 produced_in = chemical_plant
@@ -458,7 +458,7 @@ transport = pipe
 produced_in = offshore_pump
 
 [steam]
-ingredients = None
+ingredients = water: 1
 crafting_time = 0
 transport = pipe
 produced_in = boiler
