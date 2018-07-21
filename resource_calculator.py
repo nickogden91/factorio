@@ -82,10 +82,18 @@ class ResourceCalculator:
             if self.items[item_n]['ingredients'] is not None:
                 self.print_factory(item_n, count, recurse_level=recurse_level+1, aggregate_materials=aggregate_materials)
 
+        total_production_units = defaultdict(int)
         if recurse_level == 0:
-            print('\nAggregate Materials:\n')
+            print('\n\nAggregate Materials:\n')
             for item in aggregate_materials:
+                rate = aggregate_materials[item] 
+                total_production_units[self.items[item]['produced_in']] += \
+                    ceil(rate*(self.items[item]['crafting_time'])/self.items[self.items[item]['produced_in']]['crafting_speed'])
                 print(self.get_item_str(item, aggregate_materials[item]))
+
+            print("\n\nTotal Production Units:\n")
+            for unit,count in total_production_units.items():
+                print('%-24s %6d' % (unit, count))
 
 
     def get_item_str(self, item_name, rate, multiline=False, indent_str=''):

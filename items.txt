@@ -213,7 +213,7 @@ crafting_time = 2
 [stone_brick]
 ingredients = stone: 2
 crafting_time = 1.75438596
-produced_in = furnace
+produced_in = electric_furnace
 
 [concrete]
 ingredients = iron_ore: 0.1, stone_brick: 0.5, water: 10
@@ -650,7 +650,7 @@ ingredients = battery: 0.5, copper_cable: 15, processing_unit: 1.5, speed_module
 crafting_time = 7
 
 [space_science_pack]
-ingredients = rocket_part: 0.1, satellite: 0.001
+ingredients = rocket_launch: 0.001
 crafting_time = 0
 
 [pistol]
@@ -873,3 +873,27 @@ crafting_time = 0.5
 [rocket_silo]
 ingredients = concrete: 1000, electric_engine_unit: 200, pipe: 100, processing_unit: 200, steel_plate: 1000
 crafting_time = 30
+
+[rocket_launch]
+ingredients = rocket_part: 100, satellite: 1
+
+[science_1]
+ingredients = science_pack_1: 1
+
+[science_2]
+ingredients = science_pack_1: 1, science_pack_2: 1
+
+[science_3]
+ingredients = science_pack_1: 1, science_pack_2: 1, science_pack_3: 1
+
+[science_4]
+ingredients = science_pack_1: 1, science_pack_2: 1, science_pack_3: 1, millitary_science_pack: 1
+
+[science_5]
+ingredients = science_pack_1: 1, science_pack_2: 1, science_pack_3: 1, millitary_science_pack: 1, production_science_pack: 1
+
+[science_6]
+ingredients = science_pack_1: 1, science_pack_2: 1, science_pack_3: 1, millitary_science_pack: 1, production_science_pack: 1, high_tech_science_pack: 1
+
+[science_7]
+ingredients = science_pack_1: 1, science_pack_2: 1, science_pack_3: 1, millitary_science_pack: 1, production_science_pack: 1, high_tech_science_pack: 1, space_science_pack: 1
