@@ -93,6 +93,7 @@ class ResourceCalculator:
         transport_name = self.items[item_name]['transport']
         transport_capacity = 100*rate/(self.items[self.items[item_name]['transport']]['transport_speed'])
         production_unit_name = self.items[item_name]['produced_in']
+        #print(rate, self.items[item_name]['crafting_time'], self.items[self.items[item_name]['produced_in']]['crafting_speed'])
         production_unit_count = ceil(rate*(self.items[item_name]['crafting_time'])/self.items[self.items[item_name]['produced_in']]['crafting_speed'])
         if multiline:
             return '%s%-22s %8s\n%s%-22s %8s\n%s%-22s %8s' % (indent_str, item_name, '%.1f/s' % rate, indent_str, transport_name, '%.0f%%' % transport_capacity, indent_str, production_unit_name, production_unit_count)

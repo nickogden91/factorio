@@ -294,10 +294,12 @@ crafting_time = 2
 [offshore_pump]
 ingredients = electronic_circuit: 2, iron_gear_wheel: 1, pipe: 1
 crafting_time = 0.5
+crafting_speed = 1
 
 [pumpjack]
 ingredients = electronic_circuit: 5, iron_gear_wheel: 10, pipe: 10, steel_plate: 5
 crafting_time = 5
+crafting_speed = 1
 
 [stone_furnace]
 ingredients = stone: 5
@@ -329,14 +331,17 @@ crafting_speed = 1.25
 [oil_refinery]
 ingredients = electronic_circuit: 10, iron_gear_wheel: 10, pipe: 10, steel_plate: 15, stone_brick: 10
 crafting_time = 8
+crafting_speed = 1
 
 [chemical_plant]
 ingredients = electronic_circuit: 5, iron_gear_wheel: 5, pipe: 5, steel_plate: 5
 crafting_time = 5
+crafting_speed = 1
 
 [centrifuge]
 ingredients = advanced_circuit: 100, concrete: 100, iron_gear_wheel: 100, steel_plate: 50
 crafting_time = 4
+crafting_speed = 1
 
 [lab]
 ingredients = electronic_circuit: 10, iron_gear_wheel: 10, transport_belt: 4
@@ -417,19 +422,19 @@ crafting_time = 2
 
 [crude_oil]
 ingredients = None
-crafting_time = 0
+crafting_time = 0.1
 transport = pipe
 produced_in = pumpjack
 
 [heavy_oil]
 ingredients = crude_oil: 10, water: 5
-crafting_time = 0
+crafting_time = 0.5
 transport = pipe
 produced_in = oil_refinery
 
 [light_oil]
 ingredients = crude_oil: 2.222222, water: 1.111111
-crafting_time = 0
+crafting_time = 0.111111
 transport = pipe
 produced_in = oil_refinery
 
@@ -441,9 +446,9 @@ produced_in = chemical_plant
 
 [petroleum_gas]
 ingredients = crude_oil: 1.8181818, water: 0.909090909
-crafting_time = 0.125
+crafting_time = 0.090909
 transport = pipe
-produced_in = chemical_plant
+produced_in = oil_refinery
 
 [sulferic_acid]
 ingredients = iron_plate: 0.02, sulfur: 0.1, water: 2
@@ -453,13 +458,13 @@ produced_in = chemical_plant
 
 [water]
 ingredients = None
-crafting_time = 0
+crafting_time = 0.001
 transport = pipe
 produced_in = offshore_pump
 
 [steam]
 ingredients = water: 1
-crafting_time = 0
+crafting_time = 0.167
 transport = pipe
 produced_in = boiler
 
@@ -478,7 +483,7 @@ crafting_time = 1.75438596
 produced_in = electric_furnace
 
 [solid_fuel]
-ingredients = None
+ingredients = light_oil: 10
 crafting_time = 0.333
 produced_in = chemical_plant
 
@@ -488,7 +493,7 @@ crafting_time = 8.77192982
 produced_in = electric_furnace
 
 [plastic_bar]
-ingredients = None
+ingredients = coal: 1, petroleum_gas: 20
 crafting_time = 0.5
 produced_in = chemical_plant
 
