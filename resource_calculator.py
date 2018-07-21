@@ -45,6 +45,7 @@ class ResourceCalculator:
                                 "crafting_speed": float(Config[item].get('crafting_speed', 1)), \
                                 "produced_in": Config[item].get('produced_in', DEFAULT_ASSEMBLY_MACHINE), \
                                 "transport": Config[item].get('transport', DEFAULT_TRANSPORT_BELT), \
+                                "transport_speed": float(Config[item].get('transport_speed', 0))
                                 }
         #print(self.items)
 
@@ -102,33 +103,14 @@ class ResourceCalculator:
 
     def get_item_str(self, item_name, rate, multiline=False, indent_str=''):
         '''returns a production machine string (or equivalent) given the item rate'''
-        transport_str = self.get_transport_str(item_name, rate)
-        production_str = self.get_production_str(item_name, rate)
+        transport_name = self.items[item_name]['transport']
+        transport_capacity = 100*rate/(self.items[self.items[item_name]['transport']]['transport_speed'])
+        production_unit_name = self.items[item_name]['produced_in']
+        production_unit_count = ceil(rate*(self.items[item_name]['crafting_time'])/self.items[self.items[item_name]['produced_in']]['crafting_speed'])
         if multiline:
-            return '%s%s %s\n%s%s\n%s%s' % (indent_str, item_name, rate, indent_str, transport_str, indent_str, production_str)
+            return '%s%-22s %6s\n%s%-22s %6s\n%s%-22s %6s' % (indent_str, item_name, '%.1f/s' % rate, indent_str, transport_name, '%.0f%%' % transport_capacity, indent_str, production_unit_name, production_unit_count)
         else:
-            return '%s%20s %6s %36s %36s' % (indent_str, item_name, rate, transport_str, production_str) 
-
-
-    def get_production_str(self, item_name, rate):
-        return '%ss: %3s' % \
-            (self.items[item_name]['produced_in'], \
-             ceil(rate*(self.items[item_name]['crafting_time'])/self.items[self.items[item_name]['produced_in']]['crafting_speed']))
-
-
-    def get_transport_str(self, item_name, rate):
-        '''returns a belt type string (or equivalent) given the item rate'''
-        item = self.items[item_name]
-        if item['transport'] == 'express_transport_belt':
-            # if rate <= 13.3333:
-            #     return "transport belt         (%d%%)" % (100*rate/TB_FULL_CAPACITY)
-            # if rate <= 26.6666:
-            #     return "fast transport belt    (%d%%)" % (100*rate/FTB_FULL_CAPACITY)
-            # else:
-            #     return "express transport belt (%d%%)" % (100*rate/ETB_FULL_CAPACITY)
-            return "express_transport_belt (%.2f%%)" % (100*rate/ETB_FULL_CAPACITY)
-        if item['transport'] == 'pipe':
-            return "pipe (%.2f%%)" % (100*rate/PIPE_FULL_CAPACITY)
+            return '%s%-28s %6s  %28s  %6s  %28s  %4s' % (indent_str, item_name, '%3.1f/s' % rate, transport_name, '%.0f%%' % transport_capacity, production_unit_name, production_unit_count) 
 
 
 if __name__ == '__main__':

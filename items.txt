@@ -17,14 +17,17 @@ crafting_time = 3
 [transport_belt]
 ingredients = iron_gear_wheel: 0.5, iron_plate: 0.5
 crafting_time = 0.5
+transport_speed = 13.333333
 
 [fast_transport_belt]
 ingredients = iron_gear_wheel: 5, transport_belt: 1
 crafting_time = 0.5
+transport_speed = 26.666667
 
 [express_transport_belt]
 ingredients = fast_transport_belt: 1, iron_gear_wheel: 10, lubricant: 20
 crafting_time = 0.5
+transport_speed = 40
 
 [underground_belt]
 ingredients = iron_plate: 5, transport_belt: 2.5
@@ -97,6 +100,7 @@ crafting_time = 0.5
 [pipe]
 ingredients = iron_plate: 1
 crafting_time = 0.5
+transport_speed = 1000
 
 [pipe_to_ground]
 ingredients = iron_plate: 2.5, pipe: 5
